@@ -1,0 +1,73 @@
+
+
+// fonts
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dongle:wght@400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Gluten:wght@400;500&display=swap');
+
+// variables
+$primary-color: #dbd5fd;
+$bg-color: linear-gradient(50deg, #9c52d8 18%, #5b49b9 90%);
+$text-color: #5b49b9;
+$primary-text: #6a6a6a;
+$b-color: #dbd5fd;
+$sd-color: rgb(63, 63, 63);
+$green-color: rgb(188, 223, 188);
+$light-red-color:rgb(233, 204, 204);
+$hover-color: darken($primary-color, 10%);
+
+// mixins
+@mixin radial-gradient($first, $second) {
+    background: radial-gradient(lighten(#8d7ce1, $first), $b-color $second);
+}
+
+@mixin search-icon($state) {
+    display: $state;
+    position: absolute;
+    top: 45%;
+    right: 1rem;
+    transform: translateY(-50%);
+    font-size: 1.1rem;
+    font-weight: 200;
+    transition: all 0.4s ease-in-out;
+    cursor: pointer;
+    color: $primary-text;
+    z-index: 1;
+
+    &:hover {
+        color: $text-color;
+    }
+}
+
+@mixin font-style($font-size, $font-weight) {
+    font-size: $font-size;
+    font-weight: $font-weight;
+    color: $text-color;
+}
+
+@mixin rate($rate-bg-color) {
+    background: $rate-bg-color;
+    color: darken($rate-bg-color, 50%);
+    border-radius: 10px;
+    font-size: 0.7rem;
+    padding-top: 0.26rem;
+    padding-bottom: 0.26rem;
+    padding-left: 0.67rem;
+    padding-right: 0.67rem;
+}
+
+@mixin cirles($color) {
+    height: 0.8rem;
+    background-color: darken($color, 30%);
+    border-radius: 50%;
+    width: 0.8rem;
+    margin: 0 0.55rem;
+}
+
+// extended styles
+%flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

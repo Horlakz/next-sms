@@ -1,7 +1,8 @@
 module.exports = {
+  pathPrefix: "/",
   siteMetadata: {
     siteUrl: "https://www.yourdomain.tld",
-    title: "next-sms",
+    title: "Next SMS",
   },
   plugins: [
     "gatsby-plugin-sass",
@@ -16,6 +17,14 @@ module.exports = {
         path: "./src/images/",
       },
       __key: "images",
+    },
+    {
+      resolve: `gatsby-plugin-typescript`,
+        options: {
+          isTSX: true, // defaults to false
+          jsxPragma: `jsx`, // defaults to "React"
+          allExtensions: true, // defaults to false
+        },
     },
   ],
 };
