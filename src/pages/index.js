@@ -8,7 +8,7 @@ import { FaCalendar } from "@react-icons/all-files/fa/FaCalendar";
 
 // styles
 import "../styles/style.scss";
-import "../css/icon.css"
+import "../styles/css/icon.css"
 
 // markup
 const IndexPage = () => {
