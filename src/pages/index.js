@@ -130,10 +130,10 @@ const IndexPage = () => {
                       <p className="successandfail"><div className="circle-green"></div> Success<div className="circle-red"></div> Failed</p>
                       <p>Short by <span><FaCalendar className="iconss"/> Yearly <FaChevronDown className="iconss" /></span></p>
                     </div>
-                    <div className="history-content">Comming <br /> soon!</div>
+                    <div className="history-content">Coming <br /> soon!</div>
                   </div>
                 </div>
-                <div className="stats">Comming <br /> soon!</div>
+                <div className="stats">Coming <br /> soon!</div>
               </div>
             </div>
           </div>

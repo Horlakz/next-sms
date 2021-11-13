@@ -1,5 +1,5 @@
 module.exports = {
-  pathPrefix: "/",
+  pathPrefix: "/next-sms",
   siteMetadata: {
     siteUrl: "https://www.yourdomain.tld",
     title: "Next SMS",
